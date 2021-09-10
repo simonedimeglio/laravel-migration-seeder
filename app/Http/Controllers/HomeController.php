@@ -11,11 +11,16 @@ class HomeController extends Controller
 
         // SELECT * FROM trips 
         // Grazie a ORM possiamo evitare di scrivere query 
-        $allTrips = Trip::all(); //$nomeCheVuoi = Nomedelmodel::all();
+
+        // ESERCIZIO STANDARD
+        // $allTrips = Trip::all();
         
+        // BONUS
+        $allTrips = Trip::where('discount', '!=', 0)->get();
+
         // DEBUGGING DUMPS
         // dump($allTrips);
-        // dump($allTrips[0]->title); // per selezionare la singola proprietà
+        // dump($allTrips[0]->title);
 
         // Passo i dati alla view
         return view('home', compact('allTrips'));
