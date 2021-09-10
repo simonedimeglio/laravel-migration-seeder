@@ -9,6 +9,12 @@
 <body>
     <h1>Empty Structure (working)</h1>
   
-
+        @foreach($allTrips as $trip)
+            <div class="card">
+                <h2>{{$trip->title}}</h2>
+                <img src="{{ $trip->cover }}" alt="Vista di {{$trip ->title}}"/>
+                <p>{{$trip->abstract}}</p>
+            </div>
+        @endforeach
 </body>
 </html>
