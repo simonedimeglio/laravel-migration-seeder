@@ -1,0 +1,80 @@
+@import url(https://fonts.googleapis.com/css2?family=Nunito:wght@300;
+
+400;700&display=swap);header {
+  margin: 25px 0px;
+  text-align: center;
+}
+
+header h1 {
+  color: #fdffb6;
+}
+
+main .custom-container {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+main .custom-container .card {
+  width: 100%;
+  padding: 10px 25px;
+  margin: 15px 0;
+  border: 4px solid #ffd6a5;
+  border-radius: 12px;
+  background-color: #fdffb6;
+  cursor: pointer;
+}
+
+main .custom-container .card h2 {
+  color: #ffadad;
+  text-align: center;
+  width: 100%;
+}
+
+main .custom-container .card .card-content {
+  display: flex;
+  margin: 25px 0;
+}
+
+main .custom-container .card .card-content img {
+  width: 400px;
+  height: 200px;
+  border-radius: 15px;
+  border: 4px solid white;
+  margin-right: 15px;
+}
+
+main .custom-container .card .card-content .card-txt .txt-title {
+  color: #ffd6a5;
+  text-align: center;
+}
+
+main .custom-container .card .card-content .card-txt p {
+  color: #ffadad;
+  font-size: 12px;
+  margin: 10px 0;
+}
+
+main .custom-container .card .card-content .card-txt .prices-info {
+  color: #ffd6a5;
+  margin: 5px 0;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffadad;
+}
+
